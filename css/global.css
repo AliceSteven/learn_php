@@ -1,0 +1,17 @@
+/******全局样式*******/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,blockquote,th,td,p{margin:0;padding:0}
+input,button,select,textarea{outline:none}li{list-style:none}img{border:none}textarea{resize:none}
+h1,h2,h3,h4,h5,h6 {font-weight: normal; font-size: 100%;}
+table{border-collapse: collapse;  border-spacing: 0;} 
+address,caption,cite,code,dfn,em,strong,th,var{font-weight: normal; font-style: normal;}
+body{font: 12px/150% "Hiragino Sans GB","microsoft yahei",\5b8b\4f53,Verdana,Arial; color:#333333; background:#fff; word-break: break-all; word-wrap: break-word;}
+input,textarea,button{font-size:12px; font-family:"Hiragino Sans GB","microsoft yahei",\5b8b\4f53,Verdana,Arial}
+input[type="text"],input[type="button"],input[type="submit"],input[type="reset"]{-webkit-appearance: none;}
+a:link,a:visited{text-decoration:none; outline:none}
+a:hover{text-decoration:none;}
+/*clearfix*/
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{*+height:1%}
+
+.container{width: 1000px; margin: 50px auto;}
+.upload_wrapper{font-size: 16px; color: #333;}
