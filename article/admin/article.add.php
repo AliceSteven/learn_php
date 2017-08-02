@@ -6,12 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<title>发布文章</title>
 	<link rel="stylesheet" href="../css/style.css">
-<<<<<<< HEAD
-=======
 	<script type="text/javascript" charset="utf-8" src="../ueditor/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="../ueditor/ueditor.all.min.js"> </script>
 	<script type="text/javascript" charset="utf-8" src="../ueditor/lang/zh-cn/zh-cn.js"></script>
->>>>>>> gh-pages
 </head>
 <body>
 	<div class="container clearfix">
@@ -48,22 +45,16 @@
 				<div class="rows">
 					<span>内容</span>
 					<div class="row-left">
-<<<<<<< HEAD
-						<textarea name="content" id="" class="content_text" placeholder="请输入文章内容"></textarea>
-=======
 						<script id="editor" name="content" type="text/plain" style="width:824px; height:500px;"></script>
->>>>>>> gh-pages
 					</div>
 				</div>
 				<button type="submit" class="publish_btn">发布</button>
 			</form>
 		</div>
 	</div>
-<<<<<<< HEAD
-=======
 	<script type="text/javascript">
 		var ue = UE.getEditor('editor');
 	</script>
->>>>>>> gh-pages
+
 </body>
 </html>
