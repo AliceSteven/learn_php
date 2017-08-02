@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<title>发布文章</title>
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="icon" href="../images/html5.ico">
 	<script type="text/javascript" charset="utf-8" src="../ueditor/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="../ueditor/ueditor.all.min.js"> </script>
 	<script type="text/javascript" charset="utf-8" src="../ueditor/lang/zh-cn/zh-cn.js"></script>

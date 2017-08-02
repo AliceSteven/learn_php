@@ -1,18 +1,12 @@
 /******全局样式*******/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,blockquote,th,td,p{margin:0;padding:0}
 input,button,select,textarea{outline:none}li{list-style:none}img{border:none}textarea{resize:none}
-<<<<<<< HEAD
-h1,h2,h3,h4,h5,h6 {font-weight: normal; font-size: 100%;}
-table{border-collapse: collapse;  border-spacing: 0;} 
-address,caption,cite,code,dfn,em,strong,th,var{font-weight: normal; font-style: normal;}
-=======
-table{border-collapse: collapse;  border-spacing: 0;} 
->>>>>>> gh-pages
 body{font: 12px/150% "Hiragino Sans GB","microsoft yahei",\5b8b\4f53,Verdana,Arial; color:#333333; background:#fff; word-break: break-all; word-wrap: break-word;}
 input,textarea,button{font-size:12px; font-family:"Hiragino Sans GB","microsoft yahei",\5b8b\4f53,Verdana,Arial}
 input[type="text"],input[type="button"],input[type="submit"],input[type="reset"]{-webkit-appearance: none;}
 a:link,a:visited{text-decoration:none; outline:none}
 a:hover{text-decoration:none;}
+table{border-collapse: collapse; border-spacing: 0;}
 /*clearfix*/
 .clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
 .clearfix{*+height:1%}
@@ -56,8 +50,18 @@ a:hover{text-decoration:none;}
 .article_info{margin-top: 20px; margin-bottom: 20px; font-size: 14px;}
 .article_info .u{margin-right: 20px; font-size: 14px; color: #333;}
 .article_info .t{font-size: 13px; color: #989898;}
-.entry{line-height: 2; color: #666; font-size: 16px;}
-.search_title{margin-bottom: 20px; padding-bottom: 20px; border-bottom: 5px solid #efefef; font-size: 32px; color: #de4d4d;}
-.search_form{overflow: hidden;}
+.entry{line-height: 2; color: #343434; font-size: 16px; overflow: hidden;}
+.entry img{max-width: 100% !important;}
+.search_title{margin-bottom: 20px; padding-bottom: 20px; line-height: 1.5; border-bottom: 5px solid #efefef; font-size: 32px; color: #de4d4d;}
+.search_form{margin-bottom: 25px; overflow: hidden;}
 .search_form .s{float: left; width: 160px; height: 30px; line-height: 30px; padding: 0 12px; border: 1px solid #ebebeb; border-radius: 3px; font-size: 14px;}
 .sub_btn{display: block; float: right; width: 80px; height: 32px; line-height: 32px; text-align: center; color: #fff; font-size: 14px; border: none; border-radius: 3px; background-color: #449cdf; cursor: pointer;}
+.adver{width: 280px; height: 150px; display: block; margin-bottom: 25px; overflow: hidden;}
+
+.page_container{margin: 50px auto; text-align: center; font-size: 14px;}
+.page_container a{color: #333;}
+.page-prev,.page-next{display: inline-block; height: 22px; line-height: 22px; padding: 0 5px; text-align: center; font-size: 13px; border: 1px solid #ddd; color: #343434;}
+.page-prev{margin-right: 4px;}
+.page-next{margin-left: 4px; margin-right: 4px;}
+.page-off,.page-on{display: inline-block; min-width: 20px; margin: 0 5px; padding: 2px; text-align: center; vertical-align: top; font-size: 13px; border: 1px solid #ddd; cursor: pointer;}
+.page-on{color: #fff; border-color: #ea6f5a; background-color: #ea6f5a;}

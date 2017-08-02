@@ -7,9 +7,9 @@
 	}
 	mysqli_query($link, "set character set utf8");
 
-	mysqli_query($link, 'set names utf8');
+	mysqli_query($link, "set names utf8");
 
 
 	//选库
-	mysqli_select_db($link, 'article' );
+	mysqli_select_db($link, "article" );
 ?>

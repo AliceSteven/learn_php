@@ -20,6 +20,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<title>发布文章</title>
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="icon" href="../images/html5.ico">
 </head>
 <body>
 	<div class="container clearfix">
