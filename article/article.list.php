@@ -14,7 +14,11 @@
 	$showPage = 3;
 	//2、根据页码取出数据
 	require_once('connect.php');
-	$sql = "select * from article  order by dateline DESC limit ".($page-1)*5 .",{$pageSize}";
+	if (isset($page)) {
+		$sql = "select * from article  order by dateline DESC limit ".($page-1)*5 .",{$pageSize}";
+	}else{
+		$sql = "select * from article  order by dateline DESC limit 0 ,{$pageSize}";
+	}
 	$query = mysqli_query($link, $sql);
 	if($query&&mysqli_num_rows($query)) {
 		while($row = mysqli_fetch_assoc($query)) {
@@ -36,9 +40,13 @@
 	$pageOffset = ($showPage-1)/2;
 	//初始化数据
 	if ($page > 1) {
-		$page_con .= "<a href='".$_SERVER['PHP_SELF']."?p=1' class='page-off'>首页</a>";
+		$page_con .= "<a href='".$_SERVER['PHP_SELF']."?p=1' class='page-prev'>首页</a>";
 		$page_con .= "<a href='".$_SERVER['PHP_SELF']."?p=".($page-1)."' class='page-prev'>&lt;Prev</a>";
+	}else {
+		$page_con .="<a href='javascript:;' class='page-disabled'>首页</a>";
+		$page_con .="<a href='javascript:;' class='page-disabled'>&lt;Prev</a>";
 	}
+	//初始化数据
 	$start = 1;
 	$end = $total_page;
 	if ($total_page > $showPage) {
@@ -58,16 +66,30 @@
 
 	}
 	for ($i=$start; $i <= $end ; $i++) { 
-		$page_con .= "<a href='".$_SERVER['PHP_SELF']."?p=".$i."' class='page-next'>{$i}</a>";
+		if ($page == $i) {
+			$page_con .= "<a href='javascript:;' class='page-on'>{$i}</a>";
+		}else{
+			$page_con .= "<a href='".$_SERVER['PHP_SELF']."?p=".$i."' class='page-off'>{$i}</a>";
+		}
+	}
+
+	if ($total_page > $showPage && $total_page > $page+$pageOffset) {
+		$page_con .= "<span>···</span>";
 	}
 	if ($page < $total_page) {
 		$page_con .= "<a href='".$_SERVER['PHP_SELF']."?p=".($page+1)."' class='page-next'>Next&gt;</a>";
 		$page_con .= "<a href='".$_SERVER['PHP_SELF']."?p=".($total_page)."' class='page-next'>尾页</a>";
+	}else {
+		$page_con .="<a href='javascript:;' class='page-disabled'>Next&gt;</a>";
+		$page_con .="<a href='javascript:;' class='page-disabled'>尾页</a>";
 	}
 	
-	$page_con .="共{$total_page}页";
+	$page_con .="共{$total_page}页，";
+	$page_con .="<form action='article.list.php' method='get' class='page-form'>";
+	$page_con .="到第<input type='text' class='page-in' name='p'>页，";
+	$page_con .="<button type='submit' class='page-btn'>确定</button>";
+	$page_con .="</form>";
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>

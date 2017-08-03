@@ -8,4 +8,5 @@
 	<span class="page-off">11</span>
 	<span class="page-off">999</span>
 	<a href="javascript:;" class="page-next">Next&gt;</a>
+	<form action="" class="page-form">到第<input type="text" class="page-in">页，<button type="submit" class="page-btn">确定</button></form>
 </div>

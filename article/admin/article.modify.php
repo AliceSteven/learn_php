@@ -10,7 +10,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="renderer" content="webkit">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<title>发布文章</title>
+	<title>修改文章</title>
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="icon" href="../images/html5.ico">
 	<script type="text/javascript" charset="utf-8" src="../ueditor/ueditor.config.js"></script>

@@ -52,6 +52,9 @@
 					<button type="submit" class="sub_btn">搜索</button>
 				</div>
 			</form>
+			<!--280*150广告位-->
+			<a href="https://www.baidu.com" target="_blank" class="adver"><img src="images/advertising.png" alt=""></a>
+			<a href="https://www.baidu.com" target="_blank" class="adver"><img src="images/advertising.png" alt=""></a>
 		</div>
 	</div>
 </body>
